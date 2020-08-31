@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="akt">Активировать</button>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        var button = document.getElementById("akt")
+        button.addEventListener('click', function() {
+            swal("Ошибка", "Промокод был набран не верно!", "error");
+        });
+    </script>
+</body>
+</html>
