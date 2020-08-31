@@ -71,17 +71,24 @@
 </nav>
 <p style="color:#e0e401; position: relative; left: 20px;">Промокод нужен для того что бы, вы получили бесплатный хороший конфиг и скин.</p>
 
-<input style="position: relative; left: 20px; width: 500px;" type="text" placeholder="Введите промокод">
+<input style="position: relative; left: 20px; width: 500px;" id="promo" type="text" placeholder="Введите промокод">
 
 <p><a style="position: relative; left: 20px; top: 40px;" class="btn btn-success btn-lg" id="akt" role="button">Активировать</a></p>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-    var button = document.getElementById("akt")
-    button.addEventListener('click', function() {
-        swal("Ошибка", "Промокод был набран не верно!", "error");
-    });
-</script>
+
+    document.getElementById('akt').onclick = function() {
+        let promo = document.getElementById('promo').value;
+
+        if (promo == 'limeted!') {
+          swal("Успешно!", "Промокод успешно введен!", "success");
+        } else {
+          swal("Ошибка", "Промокод введен не правильно!", "error");
+        }
+    };
+
+  </script>
 
 </main><!-- /.container -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
