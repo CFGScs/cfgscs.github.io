@@ -41,6 +41,11 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+
+      }
+
+      body {
+        background: url(img/1.png);
       }
 
       html {
@@ -74,30 +79,32 @@
   </div>
 </nav>
 <p style="color: #00007a; position: relative; left: 20px; font-size: 30px;">Промокоды</p>
-<p style="color:#e0e401; position: relative; left: 20px;">Вы будите получать дополнительные конфиги.</p>
-
+<p style="color:#0273a8; position: relative; left: 20px;">Вы будите получать дополнительные конфиги.</p>
 <input style="position: relative; left: 20px; width: 500px;" id="promo" type="text" placeholder="Введите промокод">
-
 <p><a style="position: relative; left: 20px; top: 40px;" class="btn btn-success btn-lg" id="akt" role="button">Активировать</a></p>
 
 <p style="color: #00007a; position: relative; left: 20px; top: 50px; font-size: 30px;">Раздачи</p>
 
-<p style=" position: relative; left: 20px; top: 40px;">Ближайшая раздача в 04.09.2020</p>
+<p style=" position: relative; left: 20px; top: 40px;">Раздачи происходят каждый вторник и пятницу!</p>
 <p style=" position: relative; left: 20px; top: 20px;">ПРОМОКОД скрыт</p>
-  <p style=" position: relative; left: 20px; top: 20px;">ПРОМОКОД скрыт</p>
-<p style=" position: relative; left: 20px; top: 5px;">СЕКРЕНЫЙКОД скрыт</p>
-<p style=" position: relative; left: 20px; top: 5px;">СЕКРЕНЫЙКОД скрыт</p>
-<p style=" position: relative; left: 20px; top: 5px;">СЕКРЕНЫЙКОД скрыт</p>
+<p style=" position: relative; left: 20px;">ПРОМОКОД скрыт</p>
+<p style=" position: relative; left: 20px;">СЕКРЕНЫЙКОД скрыт</p>
+<p style=" position: relative; left: 20px;">СЕКРЕНЫЙКОД скрыт</p>
+<p style=" position: relative; left: 20px;">СЕКРЕНЫЙКОД скрыт</p>
+
+
+
+
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
 
-    document.getElementById('akt').onclick = function() {
+document.getElementById('akt').onclick = function() {
         let promo = document.getElementById('promo').value;
 
         if (promo == 'vlad') {
           swal("Успешно!", "Промокод успешно введен!", "success");
-        } else if (promo == 'name') {
+        } else if (promo == 'limited!') {
           swal("Успешно!", "Промокод успешно введен!", "success");
         } else {
           swal("Ошибка", "Промокод введен не правильно!", "error");

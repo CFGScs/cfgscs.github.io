@@ -43,14 +43,6 @@
         user-select: none;
       }
 
-      html {
-        overflow: hidden;
-      }
-      body {
-        background: url(img/1.png);
-      }
-
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -77,30 +69,26 @@
     </ul>
   </div>
 </nav>
-<p style="color:#ca0606; position: relative; left: 20px;">Введите секреный код от прайма!</p>
 
-<input style="position: relative; left: 20px; width: 500px;" id="promo" type="text" placeholder="Введите промокод">
+<main role="main" class="container">
 
-<p><a style="position: relative; left: 20px; top: 40px;" class="btn btn-success btn-lg" id="akt" role="button">Получить</a></p>
-
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-
-    document.getElementById('akt').onclick = function() {
-        let promo = document.getElementById('promo').value;
-
-        if (promo == '24972008') {
-          document.location.href = "prime";
-        } else if (promo == 'name') {
-            document.location.href = "prime";
-        } else {
-          swal("Ошибка", "Код введен не верно!", "error");
-        }
-    };
-
-  </script>
+  <!--Название-->
+  <h1 class="name">Кейсы</h1>
+  <!--Описание-->
+  <p class="opisanie">
+    Скачать конфиг для кейсов в ксго<br>
+    Открывай кейсы прямо в катке!<br>
+    Видео как скачать и команды: <a href="https://www.youtube.com/watch?v=vPmdkA9KUx0">СДЕСЯ ВСЕ<a>
+  </a>
+  <!--Оторожность-->
+  <p class="stop">Не рекомендуем пользоваться конфигами и читами в свободных играх!</p>
+  <!--Ссылка-->
+  <p class="dowlount"><a class="btn btn-success btn-lg" href="https://goo.gl/uV7mr4" role="button">Скачать</a></p>
 
 </main><!-- /.container -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
 </html>
+
+
+
